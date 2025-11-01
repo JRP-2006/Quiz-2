@@ -1,1 +1,48 @@
-footer { background-color: #1d3557; color: white; text-align: center; padding: 20px 0; } .redes a { color: #f1faee; text-decoration: none; margin: 0 8px; } .redes a:hover { text-decoration: underline; }
+/* 🎨 Estilos del Footer */
+footer {
+  background-color: #1d3557;
+  color: #f1faee;
+  text-align: center;
+  padding: 25px 0;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📱 Ajuste del texto principal */
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* 🔗 Enlaces de redes sociales */
+.redes {
+  margin-top: 10px;
+}
+
+.redes a {
+  color: #f1faee;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes a:hover {
+  color: #e63946;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+/* 🔝 Botón Volver arriba */
+.volver-arriba {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #457b9d;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ea
+}
