@@ -1,0 +1,114 @@
+/* ===== SECCIÓN DE CONTACTO ===== */
+.contacto {
+  background: linear-gradient(135deg, #0b1b2e, #12233f);
+  color: #f1f5f9;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00b4d8;
+  letter-spacing: 1px;
+}
+
+.contacto p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #d0d7e1;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.formulario-contacto input::placeholder,
+.formulario-contacto textarea::placeholder {
+  color: #b6beca;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid #00b4d8;
+}
+
+.formulario-contacto button {
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.formulario-contacto button:hover {
+  background: linear-gradient(90deg, #0096c7, #00b4d8);
+  transform: translateY(-3px);
+}
+
+/* ===== PIE DE PÁGINA / DERECHOS DE AUTOR ===== */
+footer {
+  background: #0a1626;
+  color: #b0b8c4;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #90e0ef;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .contacto h2 {
+    font-size: 1.6rem;
+  }
+
+  .formulario-contacto {
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
