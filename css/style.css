@@ -1,0 +1,87 @@
+/* 🎨 ===========================
+   Estilos generales (style.css)
+   =========================== */
+
+:root {
+  --color-principal: #1d3557;
+  --color-secundario: #457b9d;
+  --color-acento: #e63946;
+  --color-fondo: #f1faee;
+  --color-texto: #333;
+  --fuente-principal: 'Poppins', sans-serif;
+}
+
+/* 🌍 Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* 🧭 Navegación general */
+a {
+  color: var(--color-secundario);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-acento);
+}
+
+/* 🖼️ Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 🧱 Secciones */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: var(--color-principal);
+}
+
+/* 🧭 Botones generales */
+button {
+  background-color: var(--color-secundario);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-acento);
+  transform: translateY(-2px);
+}
+
+/* 📱 Responsive general */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
