@@ -1,0 +1,89 @@
+/* ================================
+   SECCIÓN HERO - AutoMarket
+   ================================ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-image: url("../img/fondo.jpg"); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* Capa oscura para mejor contraste del texto */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Contenido centrado */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Botón principal */
+.hero-content button {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: #ff5c5c;
+  transform: scale(1.05);
+}
+
+/* ================================
+   RESPONSIVE (celulares y tablets)
+   ================================ */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+    padding: 0 15px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
